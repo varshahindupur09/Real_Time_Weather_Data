@@ -1,0 +1,180 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "NexRad",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "nexrad_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20230210T201606.187014Z",
+      "pandas_data_fingerprint": "b5656d16571d08083fc12f3e51adf07d"
+    },
+    "batch_spec": {
+      "path": "/Users/charanpatnaik/Documents/BDIA/Assignment-01/great_expectations/data/NexRad.csv"
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "NexRad_nexrad_suite",
+    "expectation_suite_name": "nexrad_suite",
+    "great_expectations_version": "0.15.48",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2023-02-10T15:16:06.181705+00:00"
+    },
+    "validation_id": null,
+    "validation_time": "20230210T201606.195194Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "6ca4264119e07371a6377d942c75b473",
+          "max_value": 4000,
+          "min_value": 4000
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 4000
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "6ca4264119e07371a6377d942c75b473",
+          "column_set": [
+            "station_id",
+            "month",
+            "year",
+            "day"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "year",
+          "month",
+          "day",
+          "station_id"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "6ca4264119e07371a6377d942c75b473",
+          "column": "year",
+          "max_value": 2023,
+          "min_value": 2022
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 4000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "6ca4264119e07371a6377d942c75b473",
+          "column": "day",
+          "max_value": 31,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 4000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "6ca4264119e07371a6377d942c75b473",
+          "column": "station_id",
+          "type_": "str"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 4000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 5,
+    "success_percent": 100.0,
+    "successful_expectations": 5,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
